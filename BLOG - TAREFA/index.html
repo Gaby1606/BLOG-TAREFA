@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="blog">
+    <head>
+        <title>Templete Mini Blog</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Cpmpatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row" >
+               
+            </div>
+        </div>
+        <header>
+            <div id="logo">
+                <img ng-src="./imagens/logo.jpg">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#h-moda">MODA</a></li>
+                    <li><a href="#h-estilo">ESTILO</a></li>
+                    <li><a href="#h-tendencias">TENDÊNCIAS</a></li>
+                    <li><a href="#h-peças-chave">PEÇAS-CHAVE</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <div id="primeira">
+            <img ng-src="./imagens/cabecalho.png">
+        </div>
+
+        <hr width="70%">
+
+
+        <div class="moda">
+            <p><b>MODA</b></p>
+        </div>
+        <div  ng-contoller="Rest">
+        <div class="txtModa" ng-repeat="publicacao in publicacoes">
+            <h1>{{ publicacoes.title }}</h1>
+            <p>{{ publicacoes.description }}</p>
+        </div>
+</div>
+        <div class="txtModa02">
+            <p>Nos últimos desfiles internacionais, temporada de primavera 2020, vimos vários exemplos de peças de alfaiataria,
+             como blazers e coletes, definindo o desejo de moda atual. 
+             E também trench coats, jaquetas e parkas adicionarem estilo mais casual como alternativa.</p>
+        </div>
+
+        <div class="txtModa03">
+            <p>Em todos os casos, modelagens, tecidos e estampas, detalhes especiais e styling de outras épocas ressurgem como novas. 
+                Uma ótima oportunidade para apostar nas peças vintage de verdade. E o que não faltam nos brechós são opções.</p>
+        </div>
+
+        <button type="button" class="btn01">SAIBA MAIS</button>
+        
+
+        <div id="moda">
+            <img src="./imagens/img01.png">
+        </div>
+
+        <hr width="70%">
+
+        <div class="estilo">
+            <p><b>ESTILO</b></p>
+        </div>
+
+        <div class="txtEstilo">
+            <p>Ter estilos de roupa preferidos ou um estilo próprio é selecionar, dentro do que a moda propõe como tendência, 
+                aquilo que lhe cai bem e vai marcar a sua personalidade, torná-la única. 
+                Apesar da versatilidade que a moda oferece para o uso das roupas como expressão de quem somos, 
+                nem sempre é fácil se encontrar em um estilo ou saber o que queremos comunicar.</p>
+        </div>
+
+        <div id="estilo">
+            <img ng-src="./imagens/img-estilo.png">
+        </div>
+
+        <div class="subC01">
+            <p>Tweed</p>
+        </div>
+
+        <div class="subtexto">
+            <p>Você certamente já viu o tweed marcando presença nos dias de inverno.
+                Também camado de tuíde, esse tecido é quentinho e possui uma textura mais espessa, 
+                com lã de fio grosso. Geralmente seus traçados imitam o xadrez. 
+                Ele é bem estruturado e possui grande durabilidade e resistência, resultando em looks elegantes.
+                É aquela peça do guarda-roupa que vai te acompanhar por vários anos!</p>
+        </div>
+
+        <div class="subtexto02">
+            <p>Quando a temperatura começa a cair a gente sempre pensa que aquele casaco básico e quentinho pode 
+                resolver qualquer look de inverno. Só que não… Pode até dar certo uma vez,
+                mas sem chance de repetir a mesma roupa a semana toda.
+                Que tal aplicar uma fórmula certeira para criar o look nosso de cada dia? Experimente seguir esta receitinha infalível:</p>
+        </div>
+
+        <div id="barra">
+            <br>
+        </div>
+
+        <div class="subC02">
+            <p>Couro</p>
+        </div>
+
+        <div class="subtextoC1">
+            <p>O tecido couro sintético é um tipo de tecido extremamente flexível,
+                maleável e ideal para ser usado nos mais diferentes ambientes, objetos e superfícies.</p>
+        </div>
+
+        <div class="subtextoC2">
+            <p>Ele pode ser comprado a um preço bem mais barato do que o tecido de couro legítimo e 
+                não perde em nada em elegância e possibilidade de confecção.</p>
+        </div>
+
+        <div class="subtextoC3">
+            <p>Nós mulheres amamos uma peça de couro (fake e também chamado de P.U), 
+                antes muito visto apenas nas calças e jaquetas, agora teremos outra peça no auge das trends,
+                 os lindos e cheios de personalidade blazers de couro ou P.U. 
+                 Uma peça para o nosso guarda-roupas que transmite modernidade, 
+                 ]garante um visual elegante mesmo quando combinado com peças mais simples, como uma t-shirt, por exemplo.</p>
+        </div>
+
+        <div class="subtextoC4">
+            <p>Tudo que selecionamos para este, foi o que foi visto nas passarelas internacionais das semanas de moda! 
+                O melhor, muitas peças são atemporais, então não precisa de ter medo de investir! 
+            </p>
+        </div>
+        
+        <div id="couro">
+            <img ng-src="./imagens/couro.png" >
+        </div>
+
+        <div class="tendencias">
+            <p>TENDÊNCIAS</p>
+        </div>
+
+        <div class="subT01">
+            <img ng-src="./imagens/Blazer Xadres.png">
+        </div>
+
+        <div class="subTextoT01">
+            <p>
+                Uma peça vintage que eu adoro é o BLAZER XADREZ. Aliás, ele ganhou destaque na moda há algumas temporadas e
+                as marcas fizeram e continuam fazendo suas versões atualizadas, geralmente oversized. 
+                Se eu posso dar uma dica é: prefira um original vintage, que pode ser até um modelo masculino se você
+                gosta do estilo atual e bem grandão, especialmente nos ombros. Em geral, os modelos antigos são 100% lã, 
+                ou seja, tecido de qualidade.
+            </p>
+        </div>
+
+        <div id="xadrezTres02">
+            <img ng-src="./imagens/Group 2.png">
+        </div>
+
+        <button type="button" class="btn02">LER MAIS</button>
+
+        <button type="button" class="btn03">LER MAIS</button>
+
+        <button type="button" class="btn04">LER MAIS</button>
+
+        <hr width="70%">
+
+        <div class="pecas">
+            <p><b>PEÇAS-CHAVE</b></p>
+        </div>
+
+        <div id="pecas">
+            <img ng-src="./imagens/peças.png">
+        </div>
+
+        <div class="subTextoP01">
+            <p>
+                As peças-chave são curingas que se adaptam a qualquer estilo, basta fazer o match certo. Experimente identificar as peças básicas que você tem no seu guarda-roupa. Comece por aquelas que sobrevivem as altas temperaturas da moda e das estações. Adicione a sua lista shapes clássicos, texturas e tecidos que nunca saem de moda (malha, alfaiataria, seda, jeans, algodão, couro) e peças com potencial pra gerar produções 24/7. Bônus mais do que extra: você pode repetir looks sem culpa e sem esforço se acertar o mix de complementos e de styling.
+            </p>
+        </div>
+
+        <div class="subTextoP02">
+            <p>
+                Claro que a maioria das peças dessa lista a gente já conhece bem. Provavelmente, são aqueles itens que estão pendurados desde sempre no closet, mas que se encontram sufocados pelos hot hits do momento e aguardam sua ordem pra voltar a brilhar. A ideia é devolver o status de peças statement pra esses queridinhos.
+            </p>
+        </div>
+
+        <div class="subTextoP03">
+            <p>
+                Você vai se surpreender com o efeito multiplicador que eles podem ter no seu dia a dia. E se precisar de inspiração para o fashion reload confirme no revival das décadas que as passarelas não se cansam de fazer e no streetstyle das fashionistas.
+            </p>
+        </div>
+    </body>
+    <footer>
+
+        <div id="icones">
+            <img  id='imgicone' ng-src="./imagens/instagram.svg">
+            <img ng-src="./imagens/pinterest.svg">
+            <img ng-src="./imagens/youtube.svg">
+            <img ng-src="./imagens/facebook.svg">
+        </div>
+
+    </footer>
+</html>
